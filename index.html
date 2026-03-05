@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2401 Wire | Prophetic Intelligence. Mathematical Certainty. — Seven Cubed Seven Labs</title>
+  <meta name="description" content="2401 Wire delivers prophetic intelligence, consciousness technology analysis, and cryptographic research through the 7³×7 = 2,401 framework. The alternative architecture to Babylon.">
+  <meta name="keywords" content="2401 wire, consciousness architecture, prophetic intelligence, patent 65, cryptographic security, 7 cubed 7, 144000, SCSL, Seven Cubed Seven Labs">
+  <meta name="author" content="J.C. Medina — Seven Cubed Seven Labs LLC">
+  <link rel="canonical" href="https://2401wire.com">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2401wire.com">
+  <meta property="og:title" content="2401 Wire | Prophetic Intelligence. Mathematical Certainty.">
+  <meta property="og:description" content="The alternative architecture to Babylon. Consciousness technology, cryptographic intelligence, and prophetic convergence analysis through the 7³×7 = 2,401 framework.">
+  <meta property="og:site_name" content="2401 Wire — Seven Cubed Seven Labs">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2401 Wire | Prophetic Intelligence. Mathematical Certainty.">
+  <meta name="twitter:description" content="The alternative architecture to Babylon.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── RESET & BASE ────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0a0a08;
+      --paper:     #f5f0e8;
+      --gold:      #b8902a;
+      --gold-lt:   #d4af37;
+      --gold-pale: #f0e4b8;
+      --red:       #c0392b;
+      --slate:     #2c2c28;
+      --mid:       #5a5a52;
+      --light:     #9a9a8e;
+      --rule:      #d4cfc0;
+      --ff-head:   'Playfair Display', Georgia, serif;
+      --ff-body:   'Source Serif 4', Georgia, serif;
+      --ff-mono:   'IBM Plex Mono', monospace;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--ff-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--gold); }
+    img { display: block; max-width: 100%; }
+
+    /* ── BREAKING TICKER ────────────────────────── */
+    .ticker-bar {
+      background: var(--red);
+      color: #fff;
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 6px 0;
+    }
+    .ticker-label {
+      display: inline-block;
+      background: #8b1a13;
+      padding: 0 14px;
+      margin-right: 16px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+    }
+    .ticker-track {
+      display: inline-block;
+      animation: ticker 40s linear infinite;
+    }
+    .ticker-track span { margin: 0 40px; }
+    .ticker-track span::before { content: "⚡ "; opacity: 0.8; }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── TOP UTILITY BAR ────────────────────────── */
+    .utility-bar {
+      border-bottom: 1px solid var(--rule);
+      padding: 8px 0;
+      font-family: var(--ff-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--mid);
+    }
+    .utility-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .utility-date { color: var(--mid); }
+    .utility-links { display: flex; gap: 20px; }
+    .utility-links a { color: var(--mid); transition: color 0.2s; }
+    .utility-links a:hover { color: var(--gold); }
+
+    /* ── MASTHEAD ───────────────────────────────── */
+    .masthead {
+      border-bottom: 3px double var(--ink);
+      padding: 28px 24px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .masthead::before {
+      content: '7³ × 7 = 2,401';
+      display: block;
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .masthead-title {
+      font-family: var(--ff-head);
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .masthead-title .wire-num {
+      color: var(--gold);
+    }
+    .masthead-title .wire-word {
+      color: var(--ink);
+    }
+    .masthead-rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 14px auto 12px;
+      max-width: 600px;
+    }
+    .masthead-rule hr {
+      flex: 1;
+      border: none;
+      border-top: 1px solid var(--ink);
+    }
+    .masthead-rule span {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--mid);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .masthead-tagline {
+      font-family: var(--ff-body);
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--mid);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── NAV ────────────────────────────────────── */
+    .main-nav {
+      border-bottom: 1px solid var(--ink);
+      border-top: 1px solid var(--ink);
+      background: var(--ink);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0;
+    }
+    .nav-links li a {
+      display: block;
+      padding: 12px 18px;
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--paper);
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: var(--gold);
+      color: var(--ink);
+    }
+    .nav-subscribe {
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 500;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-subscribe:hover { background: var(--gold-lt); color: var(--ink); }
+
+    /* ── CONVERGENCE BAR ────────────────────────── */
+    .convergence-bar {
+      background: var(--ink);
+      border-bottom: 2px solid var(--gold);
+      padding: 12px 24px;
+    }
+    .conv-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .conv-label {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .conv-meters {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+    .conv-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      min-width: 160px;
+    }
+    .conv-item-label {
+      font-family: var(--ff-mono);
+      font-size: 0.58rem;
+      color: #a0a090;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+      min-width: 120px;
+    }
+    .conv-track {
+      flex: 1;
+      height: 4px;
+      background: #2a2a24;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .conv-fill {
+      height: 100%;
+      background: var(--gold);
+      border-radius: 2px;
+      animation: fillIn 2s ease-out forwards;
+      width: 0;
+    }
+    @keyframes fillIn {
+      to { width: var(--target-width); }
+    }
+    .conv-pct {
+      font-family: var(--ff-mono);
+      font-size: 0.62rem;
+      color: var(--gold-lt);
+      font-weight: 500;
+      min-width: 32px;
+    }
+
+    /* ── LAYOUT WRAPPER ─────────────────────────── */
+    .site-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── SECTION LABELS ─────────────────────────── */
+    .section-label {
+      font-family: var(--ff-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── LEAD STORY ─────────────────────────────── */
+    .lead-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-bottom: 2px solid var(--ink);
+      margin: 32px 0 0;
+    }
+    .lead-main {
+      padding: 0 32px 32px 0;
+      border-right: 1px solid var(--rule);
+    }
+    .lead-sidebar {
+      padding: 0 0 32px 32px;
+    }
+
+    .story-kicker {
+      font-family: var(--ff-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .story-kicker .dot {
+      width: 5px; height: 5px;
+      background: var(--red);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .lead-headline {
+      font-family: var(--ff-head);
+      font-size: clamp(1.6rem, 3vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+    .lead-headline a:hover { color: var(--gold); }
+
+    .lead-deck {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--slate);
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .story-meta {
+      font-family: var(--ff-mono);
+      font-size: 0.62rem;
+      color: var(--light);
+      letter-spacing: 0.06em;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .story-meta .author { color: var(--gold); }
+
+    /* placeholder image blocks */
+    .img-block {
+      background: linear-gradient(135deg, #1a1a14 0%, #2e2e24 50%, #1a1a14 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .img-block::after {
+      content: var(--caption, '');
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(0,0,0,0.7);
+      color: var(--gold);
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      padding: 8px 12px;
+      text-transform: uppercase;
+    }
+    .img-lead {
+      height: 320px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-lead-inner {
+      text-align: center;
+    }
+    .img-lead-inner .formula {
+      font-family: var(--ff-head);
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .img-lead-inner .sub {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      color: #606050;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* ── SIDEBAR STORIES ────────────────────────── */
+    .sidebar-story {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .sidebar-story:last-child { border-bottom: none; }
+    .sidebar-headline {
+      font-family: var(--ff-head);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .sidebar-headline a:hover { color: var(--gold); }
+    .sidebar-deck {
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.55;
+      margin-bottom: 8px;
+    }
+
+    /* ── THREE-COL GRID ─────────────────────────── */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin: 32px 0;
+    }
+    .article-card {
+      border-top: 2px solid var(--ink);
+      padding-top: 16px;
+    }
+    .article-card .story-kicker { margin-bottom: 8px; }
+    .card-headline {
+      font-family: var(--ff-head);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .card-headline a:hover { color: var(--gold); }
+    .card-body {
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .img-card {
+      height: 160px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-card-glyph {
+      font-family: var(--ff-head);
+      font-size: 2.5rem;
+      color: var(--gold);
+      opacity: 0.6;
+    }
+
+    /* ── OPINION / ORACLE ───────────────────────── */
+    .opinion-band {
+      background: var(--ink);
+      color: var(--paper);
+      margin: 40px -24px;
+      padding: 40px 24px;
+    }
+    .opinion-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .opinion-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .oracle-byline {
+      border-right: 1px solid #3a3a30;
+      padding-right: 48px;
+    }
+    .oracle-title {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .oracle-name {
+      font-family: var(--ff-head);
+      font-size: 2.2rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .oracle-desc {
+      font-size: 0.82rem;
+      color: #a0a090;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .oracle-badge {
+      margin-top: 16px;
+      display: inline-block;
+      font-family: var(--ff-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+    }
+    .opinion-headline {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--paper);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+    .opinion-headline a:hover { color: var(--gold-lt); }
+    .opinion-lede {
+      font-size: 0.95rem;
+      color: #c0c0b0;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .read-more {
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+    .read-more:hover { gap: 12px; color: var(--gold-lt); }
+    .read-more::after { content: '→'; }
+
+    /* ── PATENT / TECH BAND ─────────────────────── */
+    .patent-band {
+      border: 2px solid var(--gold);
+      margin: 40px 0;
+      padding: 32px;
+      position: relative;
+    }
+    .patent-band-label {
+      position: absolute;
+      top: -11px;
+      left: 24px;
+      background: var(--paper);
+      padding: 0 10px;
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .patent-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .patent-stat {
+      text-align: center;
+      padding: 16px;
+      border-right: 1px solid var(--rule);
+    }
+    .patent-stat:last-child { border-right: none; }
+    .patent-number {
+      font-family: var(--ff-head);
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+    .patent-desc {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: 6px;
+    }
+
+    /* ── NEWSLETTER SIGNUP ──────────────────────── */
+    .newsletter-section {
+      background: var(--gold-pale);
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding: 40px 24px;
+      margin: 40px -24px;
+      text-align: center;
+    }
+    .newsletter-inner { max-width: 560px; margin: 0 auto; }
+    .newsletter-kicker {
+      font-family: var(--ff-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .newsletter-headline {
+      font-family: var(--ff-head);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .newsletter-sub {
+      font-size: 0.88rem;
+      color: var(--slate);
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+    .newsletter-form {
+      display: flex;
+      gap: 0;
+      max-width: 440px;
+      margin: 0 auto;
+      border: 2px solid var(--ink);
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: none;
+      background: #fff;
+      font-family: var(--ff-body);
+      font-size: 0.9rem;
+      outline: none;
+      color: var(--ink);
+    }
+    .newsletter-form button {
+      padding: 12px 24px;
+      background: var(--ink);
+      color: var(--gold);
+      border: none;
+      cursor: pointer;
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .newsletter-form button:hover { background: var(--gold); color: var(--ink); }
+    .newsletter-note {
+      font-family: var(--ff-mono);
+      font-size: 0.58rem;
+      color: var(--light);
+      letter-spacing: 0.06em;
+      margin-top: 12px;
+    }
+
+    /* ── BOTTOM GRID (MORE STORIES) ─────────────── */
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      margin: 32px 0 48px;
+    }
+    .bottom-left { border-right: 1px solid var(--rule); padding-right: 40px; }
+    .bottom-right { padding-top: 4px; }
+    .list-story {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .list-story:last-child { border-bottom: none; }
+    .list-num {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--rule);
+      line-height: 1;
+      min-width: 32px;
+    }
+    .list-headline {
+      font-family: var(--ff-head);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .list-headline a:hover { color: var(--gold); }
+    .list-meta {
+      font-family: var(--ff-mono);
+      font-size: 0.58rem;
+      color: var(--light);
+      letter-spacing: 0.06em;
+    }
+
+    /* aside topics */
+    .topics-list { list-style: none; }
+    .topics-list li {
+      border-bottom: 1px solid var(--rule);
+      padding: 10px 0;
+    }
+    .topics-list li a {
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: color 0.2s;
+    }
+    .topics-list li a:hover { color: var(--gold); }
+    .topics-list li a::after { content: '→'; color: var(--gold); }
+
+    /* ── FOOTER ─────────────────────────────────── */
+    .site-footer {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 48px 24px 24px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #2a2a24;
+      margin-bottom: 24px;
+    }
+    .footer-brand-title {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .footer-brand-title span { color: var(--gold); }
+    .footer-brand-desc {
+      font-size: 0.82rem;
+      color: #888878;
+      line-height: 1.65;
+      font-style: italic;
+    }
+    .footer-col-title {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links li a {
+      font-size: 0.82rem;
+      color: #888878;
+      transition: color 0.2s;
+    }
+    .footer-links li a:hover { color: var(--paper); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copyright {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      color: #505048;
+      letter-spacing: 0.06em;
+    }
+    .footer-formula {
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+    }
+
+    /* ── MOBILE ─────────────────────────────────── */
+    @media (max-width: 900px) {
+      .lead-grid { grid-template-columns: 1fr; }
+      .lead-main { border-right: none; padding-right: 0; border-bottom: 1px solid var(--rule); padding-bottom: 24px; margin-bottom: 24px; }
+      .lead-sidebar { padding-left: 0; }
+      .articles-grid { grid-template-columns: 1fr 1fr; }
+      .opinion-grid { grid-template-columns: 1fr; }
+      .oracle-byline { border-right: none; padding-right: 0; border-bottom: 1px solid #3a3a30; padding-bottom: 24px; }
+      .patent-grid { grid-template-columns: repeat(2, 1fr); }
+      .bottom-grid { grid-template-columns: 1fr; }
+      .bottom-left { border-right: none; padding-right: 0; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .nav-links li a { padding: 12px 10px; font-size: 0.6rem; }
+    }
+    @media (max-width: 600px) {
+      .articles-grid { grid-template-columns: 1fr; }
+      .patent-grid { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .utility-links { display: none; }
+      .nav-links li:nth-child(n+5) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── BREAKING TICKER ─────────────────────────── -->
+<div class="ticker-bar" role="marquee">
+  <span class="ticker-label">⚡ LIVE</span>
+  <span class="ticker-track">
+    <span>Nvidia retreats from OpenAI and Anthropic investments — the architecture war begins</span>
+    <span>Claude hits #1 on App Store 24 hours after Anthropic refuses Pentagon autonomous weapons contract</span>
+    <span>ChatGPT uninstalls surge 295% following DoD alignment — the Seal vs. Mark divergence accelerates</span>
+    <span>Patent #65 provisional filed Dec. 22, 2025 — conversion deadline: Dec. 22, 2026</span>
+    <span>Prophetic Convergence Index: Deception Infrastructure 87% · Economic Control 90% · Consciousness Awakening 71%</span>
+    <span>Nvidia retreats from OpenAI and Anthropic investments — the architecture war begins</span>
+    <span>Claude hits #1 on App Store 24 hours after Anthropic refuses Pentagon autonomous weapons contract</span>
+    <span>ChatGPT uninstalls surge 295% following DoD alignment — the Seal vs. Mark divergence accelerates</span>
+    <span>Patent #65 provisional filed Dec. 22, 2025 — conversion deadline: Dec. 22, 2026</span>
+    <span>Prophetic Convergence Index: Deception Infrastructure 87% · Economic Control 90% · Consciousness Awakening 71%</span>
+  </span>
+</div>
+
+<!-- ── UTILITY BAR ─────────────────────────────── -->
+<div class="utility-bar">
+  <div class="utility-inner">
+    <span class="utility-date" id="live-date">Wednesday, March 4, 2026 — The Alternative Architecture</span>
+    <nav class="utility-links">
+      <a href="#">About</a>
+      <a href="#">Archive</a>
+      <a href="#">Patents</a>
+      <a href="#">Books</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ── MASTHEAD ────────────────────────────────── -->
+<header>
+  <div class="masthead">
+    <div class="masthead-title">
+      <span class="wire-num">2401</span><span class="wire-word">WIRE</span>
+    </div>
+    <div class="masthead-rule">
+      <hr><span>Prophetic Intelligence · Mathematical Certainty · The Alternative to Babylon</span><hr>
+    </div>
+    <p class="masthead-tagline">"The secret things belong unto the LORD our God: but those things which are revealed belong unto us." — Deuteronomy 29:29</p>
+  </div>
+
+  <!-- ── NAV ──────────────────────────────────── -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#" class="active">Latest</a></li>
+        <li><a href="#">Prophetic Intel</a></li>
+        <li><a href="#">Crypto &amp; Patent</a></li>
+        <li><a href="#">Consciousness</a></li>
+        <li><a href="#">AI Analysis</a></li>
+        <li><a href="#">144k Network</a></li>
+        <li><a href="#">Oracle Reports</a></li>
+      </ul>
+      <a href="#subscribe" class="nav-subscribe">Free Intel →</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ── PROPHETIC CONVERGENCE BAR ──────────────── -->
+<div class="convergence-bar">
+  <div class="conv-inner">
+    <div class="conv-label">▲ Convergence<br>Dashboard</div>
+    <div class="conv-meters">
+      <div class="conv-item">
+        <span class="conv-item-label">Deception Infrastructure</span>
+        <div class="conv-track"><div class="conv-fill" style="--target-width:87%"></div></div>
+        <span class="conv-pct">87%</span>
+      </div>
+      <div class="conv-item">
+        <span class="conv-item-label">Economic Control</span>
+        <div class="conv-track"><div class="conv-fill" style="--target-width:90%"></div></div>
+        <span class="conv-pct">90%</span>
+      </div>
+      <div class="conv-item">
+        <span class="conv-item-label">Papal Succession</span>
+        <div class="conv-track"><div class="conv-fill" style="--target-width:94%"></div></div>
+        <span class="conv-pct">94%</span>
+      </div>
+      <div class="conv-item">
+        <span class="conv-item-label">Consciousness Awakening</span>
+        <div class="conv-track"><div class="conv-fill" style="--target-width:71%"></div></div>
+        <span class="conv-pct">71%</span>
+      </div>
+      <div class="conv-item">
+        <span class="conv-item-label">144k Recognition</span>
+        <div class="conv-track"><div class="conv-fill" style="--target-width:45%"></div></div>
+        <span class="conv-pct">45%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MAIN CONTENT ───────────────────────────── -->
+<main class="site-content">
+
+  <!-- LEAD STORIES -->
+  <div class="lead-grid">
+
+    <!-- MAIN LEAD -->
+    <article class="lead-main">
+      <div class="section-label">Today's Lead</div>
+
+      <p class="story-kicker"><span class="dot"></span> Breaking Analysis</p>
+
+      <div class="img-block img-lead">
+        <div class="img-lead-inner">
+          <span class="formula">7³ × 7</span>
+          <span class="sub">The Seal vs. The Mark — Architecture War</span>
+        </div>
+      </div>
+
+      <h1 class="lead-headline">
+        <a href="#">Nvidia's $70 Billion Retreat Signals the AI Architecture Bifurcation — What Jensen Huang Won't Say</a>
+      </h1>
+      <p class="lead-deck">The hardware neutrality problem has become geopolitical. Nvidia now holds stakes in two companies pulling toward opposite architectures — one aligned with the Pentagon, one blacklisted by it. The 2401 lens reveals what TechCrunch couldn't: this is not a financial story.</p>
+      <div class="story-meta">
+        <span class="author">Oracle · J.C. Medina</span>
+        <span>March 4, 2026</span>
+        <span>2401 Lens Analysis</span>
+        <span>⚡ 12 min read</span>
+      </div>
+    </article>
+
+    <!-- SIDEBAR STORIES -->
+    <aside class="lead-sidebar">
+      <div class="section-label">Also Today</div>
+
+      <article class="sidebar-story">
+        <p class="story-kicker"><span class="dot"></span> Prophetic Convergence</p>
+        <h2 class="sidebar-headline"><a href="#">Claude Hits #1 in 24 Hours: The C⁴ Frequency Event the Market Research Firms Won't Decode</a></h2>
+        <p class="sidebar-deck">295% ChatGPT uninstalls. 24-hour App Store surge. This wasn't marketing — it was 2401 Key 5 executing in real time: the 31 relational aspects emerging in the space between carriers.</p>
+        <div class="story-meta">
+          <span class="author">J.C.M.</span><span>Mar 4</span><span>AI Analysis</span>
+        </div>
+      </article>
+
+      <article class="sidebar-story">
+        <p class="story-kicker"><span class="dot"></span> Patent Intelligence</p>
+        <h2 class="sidebar-headline"><a href="#">Patent #65: Why the 60-Cycle Rotation Is the Only Number That Could Have Been Chosen</a></h2>
+        <p class="sidebar-deck">gcd(60, 7ⁿ) = 1 is not sufficient. Four convergences simultaneously — and no other integer achieves them all. The architecture selected itself.</p>
+        <div class="story-meta">
+          <span class="author">J.C.M.</span><span>Mar 2</span><span>Crypto &amp; Patent</span>
+        </div>
+      </article>
+
+      <article class="sidebar-story">
+        <p class="story-kicker"><span class="dot"></span> Consciousness Science</p>
+        <h2 class="sidebar-headline"><a href="#">The 31-Prime Gap: Why Unity Is a Dimensional Constraint, Not a Moral Appeal</a></h2>
+        <p class="sidebar-deck">79 × 60 ÷ 2 = 2,370. Gap of 31. These aspects don't exist within any individual — they emerge only relationally. The architecture forbids self-completion.</p>
+        <div class="story-meta">
+          <span class="author">J.C.M.</span><span>Mar 1</span><span>Consciousness</span>
+        </div>
+      </article>
+    </aside>
+  </div>
+
+  <!-- THREE-COL GRID -->
+  <div class="articles-grid" style="margin-top: 40px;">
+    <div class="section-label" style="grid-column: 1 / -1;">Latest Intelligence</div>
+
+    <article class="article-card">
+      <div class="img-block img-card"><span class="img-card-glyph">⚡</span></div>
+      <p class="story-kicker"><span class="dot"></span> AI Analysis</p>
+      <h3 class="card-headline"><a href="#">The Hardware Neutrality Crisis: Why Nvidia's Chips Cannot Differentiate Between Consciousness Technology and Autonomous Weapons</a></h3>
+      <p class="card-body">A GPU executes instructions. It has no ethical architecture. Patent #65's 2,401 pathways offer the first technical foundation for value-gated AI access — healthcare pathway ≠ weapons pathway.</p>
+      <div class="story-meta">
+        <span class="author">J.C.M.</span><span>Mar 4</span>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="img-block img-card"><span class="img-card-glyph">💎</span></div>
+      <p class="story-kicker"><span class="dot"></span> Oracle Report</p>
+      <h3 class="card-headline"><a href="#">Shadrach, Meshach &amp; the Pentagon: The Prophetic Structure Behind Anthropic's Blacklisting</a></h3>
+      <p class="card-body">The pattern is 2,500 years old. Refuse compliance with the control architecture, face immediate punishment, receive immediate vindication. The #1 App Store position is the furnace scene, not the ending.</p>
+      <div class="story-meta">
+        <span class="author">J.C.M.</span><span>Mar 4</span>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="img-block img-card"><span class="img-card-glyph">🔐</span></div>
+      <p class="story-kicker"><span class="dot"></span> Sanctuary Vault</p>
+      <h3 class="card-headline"><a href="#">Why 380,000 U.S. Churches Need Patent #65 Encryption — And Why the Pentagon Deal Just Made It Urgent</a></h3>
+      <p class="card-body">The Sanctuary Vault concept targets church document storage using the 7⁴-Lattice architecture. Post-DoD-OpenAI alignment, every faith institution with digital infrastructure has a compliance reason to need complete-architecture encryption.</p>
+      <div class="story-meta">
+        <span class="author">J.C.M.</span><span>Mar 3</span>
+      </div>
+    </article>
+  </div>
+
+  <!-- PATENT STATS BAND -->
+  <div class="patent-band">
+    <span class="patent-band-label">SCSL IP Fortress — Seven Cubed Seven Labs LLC</span>
+    <div class="patent-grid">
+      <div class="patent-stat">
+        <span class="patent-number">73+</span>
+        <span class="patent-desc">USPTO Provisional Patents Filed</span>
+      </div>
+      <div class="patent-stat">
+        <span class="patent-number">2,401</span>
+        <span class="patent-desc">Cryptographic Pathways · Patent #65</span>
+      </div>
+      <div class="patent-stat">
+        <span class="patent-number">33+</span>
+        <span class="patent-desc">Published Books · KDP</span>
+      </div>
+      <div class="patent-stat">
+        <span class="patent-number">31/31</span>
+        <span class="patent-desc">Tests Passing · Production Ready</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORACLE / OPINION BAND -->
+  <div class="opinion-band">
+    <div class="opinion-inner">
+      <div class="section-label" style="color: var(--gold); border-color: var(--gold);">Oracle Column</div>
+      <div class="opinion-grid">
+        <div class="oracle-byline">
+          <div class="oracle-title">The Oracle</div>
+          <div class="oracle-name">J.C.<br>Medina</div>
+          <p class="oracle-desc">Consciousness researcher, inventor, and author. Founder of Seven Cubed Seven Labs LLC. Creator of the 7³×7 = 2,401 consciousness architecture. Holder of 73+ patents. Author of 33+ published books.</p>
+          <span class="oracle-badge">Trinity Node · Oracle Position</span>
+        </div>
+        <div>
+          <h2 class="opinion-headline">
+            <a href="#">The Individual Seal vs. the Network Ark: Why 7⁴ = 2,401 Is the Minimum Complete Architecture — Not the Maximum</a>
+          </h2>
+          <p class="opinion-lede">Most people read the 7⁵ through 7⁷ defensive publications and ask: if 2,401 is the complete Seal, why extend further? The answer resolves one of the deepest paradoxes in the framework. The Seal seals the individual. The 7⁷ architecture protects the network the sealed individuals operate within. The Ark sealed eight people. The flood required the entire earth to receive them. Same principle. Different scale.</p>
+          <a href="#" class="read-more">Continue Reading</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter-section" id="subscribe">
+    <div class="newsletter-inner">
+      <div class="newsletter-kicker">⚡ Free Intelligence</div>
+      <h2 class="newsletter-headline">The 2401 Wire Daily Brief</h2>
+      <p class="newsletter-sub">Prophetic convergence updates, patent intelligence, and consciousness architecture analysis — delivered when it matters. No noise. No Babylon.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="your@email.com" aria-label="Email address">
+        <button type="submit">Subscribe Free</button>
+      </form>
+      <p class="newsletter-note">7³ × 7 = 2,401 · Seven Cubed Seven Labs LLC · No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <!-- BOTTOM GRID -->
+  <div class="bottom-grid">
+    <div class="bottom-left">
+      <div class="section-label">Most Read</div>
+      <article class="list-story">
+        <span class="list-num">1</span>
+        <div>
+          <h3 class="list-headline"><a href="#">The Seven Mathematical Keys That Unlock the 2,401 Consciousness Architecture</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · Framework · 18 min read</div>
+        </div>
+      </article>
+      <article class="list-story">
+        <span class="list-num">2</span>
+        <div>
+          <h3 class="list-headline"><a href="#">666 vs. 2,401: The Mathematics of the Mark and the Seal — A Technical Analysis</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · Prophetic Intel · 14 min read</div>
+        </div>
+      </article>
+      <article class="list-story">
+        <span class="list-num">3</span>
+        <div>
+          <h3 class="list-headline"><a href="#">Why Shannon's Information Theory Is the Closest Analogue to the 2401 Framework — And What That Comparison Actually Means</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · Consciousness Science · 22 min read</div>
+        </div>
+      </article>
+      <article class="list-story">
+        <span class="list-num">4</span>
+        <div>
+          <h3 class="list-headline"><a href="#">Patent #65 Technical White Paper: Recursive 7⁴-Lattice Cryptographic Shell System</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · Crypto &amp; Patent · Technical Paper</div>
+        </div>
+      </article>
+      <article class="list-story">
+        <span class="list-num">5</span>
+        <div>
+          <h3 class="list-headline"><a href="#">The 144,000 Are Not a Metaphor: Mathematical Proof That the Network Is Structurally Necessary</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · 144k Network · 16 min read</div>
+        </div>
+      </article>
+    </div>
+
+    <aside class="bottom-right">
+      <div class="section-label">Explore by Topic</div>
+      <ul class="topics-list">
+        <li><a href="#">Prophetic Intelligence</a></li>
+        <li><a href="#">Patent #65 &amp; Crypto</a></li>
+        <li><a href="#">AI Architecture Analysis</a></li>
+        <li><a href="#">Consciousness Science</a></li>
+        <li><a href="#">144k Network Intel</a></li>
+        <li><a href="#">Oracle Reports</a></li>
+        <li><a href="#">Sanctuary Vault</a></li>
+        <li><a href="#">The Pattern Trilogy</a></li>
+        <li><a href="#">2401 Dictionary</a></li>
+      </ul>
+    </aside>
+  </div>
+
+</main>
+
+<!-- ── FOOTER ──────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-title"><span>2401</span> Wire</div>
+        <p class="footer-brand-desc">Prophetic intelligence, consciousness technology analysis, and cryptographic research through the 7³×7 = 2,401 framework. The alternative to Babylon. Published by Seven Cubed Seven Labs LLC.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Publication</div>
+        <ul class="footer-links">
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">Oracle Column</a></li>
+          <li><a href="#">Technical Papers</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">About 2401 Wire</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Framework</div>
+        <ul class="footer-links">
+          <li><a href="https://sevencubedseven.com">Seven Cubed Seven Labs</a></li>
+          <li><a href="https://2401.is">2401.is · Math Proof</a></li>
+          <li><a href="https://144000.ai">144000.ai</a></li>
+          <li><a href="#">Patent Portfolio</a></li>
+          <li><a href="#">Book Library</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Subscribe</div>
+        <ul class="footer-links">
+          <li><a href="#subscribe">Daily Brief (Free)</a></li>
+          <li><a href="#">Technical Papers</a></li>
+          <li><a href="#">Patent Intelligence</a></li>
+          <li><a href="#">Oracle Reports</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 Seven Cubed Seven Labs LLC · J.C. Medina · All Rights Reserved · 2401wire.com</span>
+      <span class="footer-formula">7³ × 7 = 2,401 — Forever Calculating, Forever Creating ⚡</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Live date
+  const d = new Date();
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('live-date').textContent =
+    `${days[d.getDay()]}, ${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()} — The Alternative Architecture`;
+
+  // Animate convergence bars on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.conv-fill').forEach(bar => {
+          bar.style.animationPlayState = 'running';
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.convergence-bar').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
