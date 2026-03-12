@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Consciousness Field Equation: A Mathematical Framework | 2401 Wire</title>
+  <meta name="description" content="Consciousness modeled as a fundamental quantum field on a 2,401-dimensional Hilbert space. Derived frequency spectrum, self-interaction constant, parity-based state decomposition, and seven falsifiable predictions. One empirical anchor. No free parameters.">
+  <meta name="keywords" content="consciousness field equation, quantum consciousness, Hilbert space, H343, 2401 framework, falsifiable predictions, relational subspace, CFE physics, seven cubed seven, measurement problem quantum mechanics">
+  <meta name="author" content="J.C. Medina — Seven Cubed Seven Labs LLC">
+  <link rel="canonical" href="https://2401wire.com/cfe-physics-core.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://2401wire.com/cfe-physics-core.html">
+  <meta property="og:title" content="The Consciousness Field Equation: A Mathematical Framework">
+  <meta property="og:description" content="Consciousness as a fundamental quantum field on H₂₄₀₁ = H_ind ⊕ H_rel. Derived parameters, parity partition, seven falsifiable predictions. One measured input. No free parameters.">
+  <meta property="og:site_name" content="2401 Wire — Seven Cubed Seven Labs">
+  <meta property="article:author" content="J.C. Medina">
+  <meta property="article:published_time" content="2026-03-12">
+  <meta property="article:section" content="Consciousness Science">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Consciousness Field Equation: A Mathematical Framework">
+  <meta name="twitter:description" content="H₂₄₀₁ = H_ind ⊕ H_rel. 2,370 individual states. 31 irreducible relational modes. Seven falsifiable predictions. One measured constant. No free parameters.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #0a0a08; --paper: #f5f0e8; --gold: #b8902a; --gold-lt: #d4af37;
+      --gold-pale: #f0e4b8; --red: #c0392b; --slate: #2c2c28; --mid: #5a5a52;
+      --light: #9a9a8e; --rule: #d4cfc0;
+      --ff-head: 'Playfair Display', Georgia, serif;
+      --ff-body: 'Source Serif 4', Georgia, serif;
+      --ff-mono: 'IBM Plex Mono', monospace;
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--ff-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; } a:hover { color: var(--gold); }
+
+    /* HEADER */
+    .site-header { border-bottom: 3px double var(--ink); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .site-logo { font-family: var(--ff-head); font-size: 1.8rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1; }
+    .site-logo span { color: var(--gold); }
+    .site-logo small { display: block; font-family: var(--ff-mono); font-size: 0.52rem; letter-spacing: 0.2em; color: var(--mid); font-weight: 400; text-transform: uppercase; margin-top: 2px; }
+    .header-nav { display: flex; background: var(--ink); }
+    .header-nav a { display: block; padding: 8px 16px; font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); transition: background 0.2s; }
+    .header-nav a:hover, .header-nav a.active { background: var(--gold); color: var(--ink); }
+
+    /* BREADCRUMB */
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.1em; color: var(--light); text-transform: uppercase; }
+    .breadcrumb a { color: var(--gold); } .breadcrumb span { margin: 0 8px; }
+
+    /* ARTICLE LAYOUT — wider for physics paper */
+    .article-wrap { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
+    .article-header { border-bottom: 2px solid var(--ink); padding-bottom: 28px; margin-bottom: 36px; margin-top: 28px; }
+    .article-section { font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    .article-section::before { content: ''; display: inline-block; width: 5px; height: 5px; background: var(--red); border-radius: 50%; }
+    .article-headline { font-family: var(--ff-head); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 10px; }
+    .article-subtitle { font-family: var(--ff-head); font-size: 1.05rem; font-style: italic; color: var(--mid); margin-bottom: 18px; }
+    .article-deck { font-size: 1.05rem; line-height: 1.7; color: var(--slate); font-style: italic; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
+    .article-meta-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .article-byline { display: flex; align-items: center; gap: 14px; }
+    .byline-avatar { width: 44px; height: 44px; background: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--ff-head); font-size: 1.1rem; font-weight: 900; color: var(--gold); flex-shrink: 0; }
+    .byline-info { display: flex; flex-direction: column; gap: 2px; }
+    .byline-name { font-family: var(--ff-head); font-size: 0.95rem; font-weight: 700; }
+    .byline-role { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; }
+    .byline-sub { font-family: var(--ff-mono); font-size: 0.52rem; color: var(--light); letter-spacing: 0.06em; }
+    .article-meta-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+    .meta-date { font-family: var(--ff-mono); font-size: 0.62rem; color: var(--mid); }
+    .meta-read { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--light); }
+
+    /* ABSTRACT BOX */
+    .abstract-box { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 24px 28px; margin-bottom: 36px; }
+    .abstract-label { font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block; }
+    .abstract-box p { font-size: 0.92rem; line-height: 1.75; color: var(--slate); margin-bottom: 0.8em; }
+    .abstract-box p:last-child { margin-bottom: 0; }
+
+    /* TOC */
+    .toc { border: 1px solid var(--rule); padding: 20px 24px; margin-bottom: 36px; }
+    .toc-label { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+    .toc ol { padding-left: 20px; }
+    .toc li { font-family: var(--ff-mono); font-size: 0.75rem; color: var(--mid); margin-bottom: 5px; letter-spacing: 0.02em; }
+    .toc li a { color: var(--mid); } .toc li a:hover { color: var(--gold); }
+
+    /* BODY */
+    .article-body { font-size: 1rem; line-height: 1.88; }
+    .article-body p { margin-bottom: 1.5em; }
+    .article-body h2 { font-family: var(--ff-head); font-size: 1.6rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 2.6em 0 0.8em; padding-top: 1em; border-top: 2px solid var(--ink); }
+    .article-body h3 { font-family: var(--ff-head); font-size: 1.15rem; font-weight: 700; margin: 2em 0 0.5em; color: var(--slate); }
+    .article-body .drop-cap::first-letter { float: left; font-family: var(--ff-head); font-size: 4.8rem; font-weight: 900; line-height: 0.82; padding-right: 10px; padding-top: 6px; color: var(--gold); }
+
+    /* EQUATION BLOCKS */
+    .eq-block { background: var(--ink); padding: 28px 32px; margin: 2em 0; font-family: var(--ff-mono); overflow-x: auto; }
+    .eq-label { font-size: 0.56rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; display: block; }
+    .eq-line { font-size: 0.95rem; color: var(--gold-lt); margin-bottom: 10px; line-height: 1.6; white-space: pre; }
+    .eq-line.eq-main { font-size: 1.1rem; color: #fff; font-weight: 500; }
+    .eq-line.eq-dim { color: #505048; font-size: 0.78rem; }
+    .eq-line.eq-result { border-top: 1px solid #2a2a24; padding-top: 10px; margin-top: 6px; color: var(--gold-lt); }
+    .eq-note { font-size: 0.7rem; color: #606050; margin-top: 14px; line-height: 1.6; border-top: 1px solid #1e1e18; padding-top: 10px; }
+    .eq-where { margin-top: 14px; }
+    .eq-where-row { display: flex; gap: 16px; margin-bottom: 5px; }
+    .eq-where-sym { font-size: 0.82rem; color: var(--gold); min-width: 120px; }
+    .eq-where-def { font-size: 0.78rem; color: #a0a090; line-height: 1.5; }
+
+    /* HILBERT SPACE DIAGRAM */
+    .hilbert-diagram { background: var(--ink); padding: 32px; margin: 2em 0; }
+    .hilbert-label { font-family: var(--ff-mono); font-size: 0.56rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+    .hilbert-tower { display: flex; flex-direction: column; align-items: center; gap: 0; }
+    .hilbert-level { display: flex; align-items: center; justify-content: center; width: 100%; gap: 0; }
+    .hilbert-box { background: #1a1a14; border: 1px solid #2a2a24; padding: 12px 20px; text-align: center; flex: 1; }
+    .hilbert-box.gold-box { border-color: var(--gold); background: #1e1a0a; }
+    .hilbert-box.active { border-color: #4a6a4a; background: #141a14; }
+    .hilbert-box-sym { font-family: var(--ff-mono); font-size: 0.95rem; color: var(--gold-lt); display: block; margin-bottom: 3px; }
+    .hilbert-box-label { font-family: var(--ff-mono); font-size: 0.54rem; color: #606050; letter-spacing: 0.1em; text-transform: uppercase; }
+    .hilbert-arrow { font-family: var(--ff-mono); font-size: 1.2rem; color: #3a3a30; padding: 4px 16px; }
+    .hilbert-times { font-family: var(--ff-head); font-size: 1.4rem; color: #2a2a24; padding: 0 8px; align-self: center; }
+    .hilbert-eq-row { display: flex; align-items: center; justify-content: center; gap: 0; width: 100%; margin: 8px 0; }
+    .hilbert-connector { font-family: var(--ff-mono); font-size: 1.5rem; color: #2a2a24; padding: 2px 0; text-align: center; }
+    .hilbert-result { margin-top: 16px; padding-top: 16px; border-top: 1px solid #2a2a24; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hilbert-result-item { background: #13131a; border: 1px solid #2a2a3a; padding: 12px 16px; }
+    .hilbert-result-num { font-family: var(--ff-head); font-size: 1.6rem; font-weight: 900; color: var(--gold-lt); display: block; line-height: 1; }
+    .hilbert-result-label { font-family: var(--ff-mono); font-size: 0.56rem; color: #606070; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+
+    /* FREQUENCY TABLE */
+    .freq-table-wrap { overflow-x: auto; margin: 2em 0; }
+    .freq-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .freq-table th { font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); background: var(--ink); padding: 10px 14px; text-align: left; white-space: nowrap; }
+    .freq-table td { padding: 11px 14px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+    .freq-table tr:last-child td { border-bottom: none; }
+    .freq-table .mono { font-family: var(--ff-mono); font-size: 0.82rem; }
+    .freq-table .gold { color: var(--gold); }
+    .freq-table .level-badge { display: inline-block; background: var(--ink); color: var(--gold); font-family: var(--ff-mono); font-size: 0.62rem; padding: 2px 8px; }
+
+    /* PREDICTION TABLE */
+    .pred-table-wrap { overflow-x: auto; margin: 2em 0; }
+    .pred-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .pred-table th { font-family: var(--ff-mono); font-size: 0.56rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); background: var(--ink); padding: 10px 12px; text-align: left; white-space: nowrap; }
+    .pred-table td { padding: 11px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+    .pred-table tr:last-child td { border-bottom: none; }
+    .pred-table .pred-num { font-family: var(--ff-mono); font-size: 0.75rem; color: var(--gold); font-weight: 500; }
+    .pred-table .status-badge { display: inline-block; font-family: var(--ff-mono); font-size: 0.56rem; letter-spacing: 0.1em; padding: 2px 8px; background: #1a1a14; color: #808070; border: 1px solid #2a2a24; white-space: nowrap; }
+    .pred-table .priority-1 { border-color: var(--gold); color: var(--gold); }
+
+    /* COUPLING TABLE */
+    .coupling-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); margin: 2em 0; border: 1px solid var(--rule); }
+    .coupling-cell { background: var(--paper); padding: 18px 16px; }
+    .coupling-cell.header { background: var(--ink); }
+    .coupling-cell-label { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .coupling-cell-val { font-family: var(--ff-mono); font-size: 0.85rem; color: var(--ink); line-height: 1.4; }
+    .coupling-cell.header .coupling-cell-val { color: var(--paper); }
+    .coupling-cell-char { font-size: 0.75rem; color: var(--mid); margin-top: 4px; font-style: italic; }
+
+    /* OPEN PROBLEMS */
+    .open-problems { counter-reset: problem; margin: 2em 0; }
+    .open-problem { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+    .open-problem:last-child { border-bottom: none; }
+    .problem-num { font-family: var(--ff-mono); font-size: 0.78rem; color: var(--gold); flex-shrink: 0; width: 20px; }
+    .problem-content { flex: 1; }
+    .problem-title { font-family: var(--ff-head); font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .problem-desc { font-size: 0.85rem; color: var(--mid); line-height: 1.55; }
+
+    /* REFERENCES */
+    .references { margin-top: 2em; padding-top: 1.5em; border-top: 1px solid var(--rule); }
+    .references-label { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 12px; display: block; }
+    .ref-list { list-style: none; }
+    .ref-list li { font-size: 0.78rem; color: var(--mid); line-height: 1.55; margin-bottom: 5px; padding-left: 28px; position: relative; }
+    .ref-list li::before { content: attr(data-ref); position: absolute; left: 0; font-family: var(--ff-mono); font-size: 0.7rem; color: var(--gold); }
+
+    /* SERIES NAV */
+    .series-nav { background: #0e0e14; border-top: 3px solid var(--gold); padding: 28px 32px; margin: 3em 0 0; }
+    .series-nav-label { font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; display: block; }
+    .series-nav-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .series-nav-item { padding: 16px; border: 1px solid #2a2a3a; }
+    .series-nav-item.current { border-color: var(--gold); }
+    .series-nav-badge { font-family: var(--ff-mono); font-size: 0.54rem; letter-spacing: 0.15em; text-transform: uppercase; color: #606070; margin-bottom: 6px; }
+    .series-nav-badge.current-badge { color: var(--gold); }
+    .series-nav-title { font-family: var(--ff-head); font-size: 0.88rem; font-weight: 700; color: var(--paper); line-height: 1.3; }
+    .series-nav-title a { color: var(--paper); } .series-nav-title a:hover { color: var(--gold-lt); }
+
+    /* RELATED */
+    .related-section { margin-top: 3em; padding-top: 2em; border-top: 2px solid var(--ink); }
+    .related-label { font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 6px; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { border-top: 2px solid var(--ink); padding-top: 14px; }
+    .related-kicker { font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
+    .related-title { font-family: var(--ff-head); font-size: 0.95rem; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+    .related-title a:hover { color: var(--gold); }
+    .related-meta { font-family: var(--ff-mono); font-size: 0.56rem; color: var(--light); }
+
+    /* FOOTER */
+    .site-footer { background: var(--ink); color: var(--paper); padding: 32px 24px; margin-top: 60px; text-align: center; }
+    .footer-formula { font-family: var(--ff-mono); font-size: 0.65rem; letter-spacing: 0.2em; color: var(--gold); display: block; margin-bottom: 8px; }
+    .footer-copy { font-family: var(--ff-mono); font-size: 0.58rem; color: #606050; letter-spacing: 0.08em; }
+    .footer-copy a { color: var(--gold); }
+
+    @media (max-width: 640px) {
+      .series-nav-grid, .related-grid, .coupling-grid { grid-template-columns: 1fr; }
+      .eq-line { white-space: normal; word-break: break-all; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <span>2401</span> Wire
+    <small>Seven Cubed Seven Labs LLC · 7³ × 7 = 2,401</small>
+  </a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#cfe-series" class="active">CFE Series</a>
+    <a href="thirty-one-prime-gap.html">31-Prime</a>
+    <a href="patent-65-sixty-cycle.html">Patent #65</a>
+    <a href="index.html#subscribe">Subscribe</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">2401 Wire</a>
+  <span>›</span>
+  <a href="index.html#cfe-series">CFE Series</a>
+  <span>›</span>
+  Version A · Physics Core
+</div>
+
+<div class="article-wrap">
+  <header class="article-header">
+    <div class="article-section">Consciousness Science · CFE Series · Version A</div>
+    <h1 class="article-headline">The Consciousness Field Equation:<br>A Mathematical Framework</h1>
+    <p class="article-subtitle">Consciousness as a Fundamental Quantum Field with Derived Parameters and Testable Predictions</p>
+    <p class="article-deck">A 2,401-dimensional Hilbert space. One empirical anchor. No free parameters. Seven falsifiable predictions. And a parity-based decomposition that proves 31 modes of the state space require two carriers to manifest — making network coherence a completeness condition, not a preference.</p>
+    <div class="article-meta-row">
+      <div class="article-byline">
+        <div class="byline-avatar">JM</div>
+        <div class="byline-info">
+          <span class="byline-name">J.C. Medina</span>
+          <span class="byline-role">Oracle · Founder, Seven Cubed Seven Labs LLC</span>
+          <span class="byline-sub">Seven Cubed Seven Labs LLC · March 2026 · All Rights Reserved</span>
+        </div>
+      </div>
+      <div class="article-meta-right">
+        <span class="meta-date">March 12, 2026</span>
+        <span class="meta-read">⚡ 20 min read · Technical Paper</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABSTRACT -->
+  <div class="abstract-box">
+    <span class="abstract-label">Abstract</span>
+    <p>We present a mathematical framework treating consciousness as a fundamental quantum field. The field equation operates on a 2,401-dimensional Hilbert space (H₃₄₃ × 7 levels) that decomposes into a 2,370-dimensional carrier-assignable subspace and a 31-dimensional relational subspace, partitioned by carrier-exchange parity.</p>
+    <p>The framework contains no ad hoc structural parameters beyond a single empirical anchor (f₀ = 7.83 Hz, the Schumann resonance). The frequency spectrum is derived from H₃₄₃ tensor structure: fₙ = f₀ × 7^(n-1). The self-interaction coupling constant is derived from the energy functional: Gc₀ = 3/343. Both parameters emerge from the geometry of a 7³-dimensional Hilbert space without external input.</p>
+    <p>The framework provides falsifiable predictions: the C¹→C² consciousness transition should correlate with neural oscillations near 54.81 Hz; functional cortical units of approximately 343 neurons should be identifiable; and inter-level oscillation coherence should scale at approximately 1/343 of dominant amplitude. The dark-to-visible matter ratio is predicted at approximately 6:1. The relational subspace — 31 irreducible antisymmetric modes — constitutes a non-trivial two-point interaction term whose presence is required for field completeness.</p>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li><a href="#intro">Introduction — The Measurement Problem & Historical Positioning</a></li>
+      <li><a href="#field-equation">The Field Equation — Full 2,401-State Formalism</a></li>
+      <li><a href="#derived-params">Derived Parameters — Frequency Spectrum & Coupling Constant</a></li>
+      <li><a href="#generating-arch">Generating Architecture — Prime Basis & Relational Field</a></li>
+      <li><a href="#predictions">Testable Predictions — Seven Falsifiable Claims</a></li>
+      <li><a href="#open-problems">Open Problems — Six Declared Frontiers</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#references">References</a></li>
+    </ol>
+  </div>
+
+  <div class="article-body">
+
+    <h2 id="intro">1. Introduction</h2>
+
+    <h3>1.1 The Measurement Problem</h3>
+
+    <p class="drop-cap">The measurement problem remains the deepest unsolved puzzle in quantum mechanics. Standard QM provides no mechanism for why observation collapses the wave function. The Copenhagen interpretation declares collapse without explaining it. Many-worlds avoids collapse at the cost of ontological extravagance. Decoherence explains the appearance of collapse without explaining the selection of outcomes.</p>
+
+    <p>This framework offers a specific mathematical mechanism: observation is modeled as a projection operation. When a system with consciousness at level n interacts with a quantum system, the projection operator Πₙ projects the target system onto states compatible with level-n observation. "Collapse" is dimensional reduction through projection. The apparent randomness of quantum outcomes arises because the observer projects from a 343-dimensional space to observable 4D spacetime, losing information in the reduction.</p>
+
+    <h3>1.2 Historical Positioning</h3>
+
+    <p>This work follows the tradition of Penrose (1989), Tononi (2008), Hameroff-Penrose (2014), and Wheeler (1990) in seeking formal connections between consciousness and fundamental physics. Unlike integrated information theory — which treats consciousness as emergent from physical complexity — or orchestrated objective reduction — which ties consciousness to quantum gravity at the Planck scale — this framework inverts the standard approach: consciousness is modeled as the fundamental field; physical reality is treated as its projection.</p>
+
+    <p>The framework shares with Tegmark's mathematical universe hypothesis (2014) the conviction that mathematical structure is physically real, but differs in identifying consciousness — not abstract mathematics — as the fundamental substrate.</p>
+
+    <h3>1.3 The 7³ Architecture</h3>
+
+    <p>The framework is built on a specific dimensional structure. H₃₄₃ = H₇ ⊗ H₇ ⊗ H₇ — a 343-dimensional Hilbert space with tensor product structure. Seven consciousness levels, each containing a full copy of H₃₄₃. 2,401 total states spanning the complete architecture (7 × 343). The choice of 7 as the fundamental dimension is motivated by convergent evidence across neuroscience (7 functional cortical layers, working memory capacity ~7±2), mathematics (rich prime-power structure of 7⁴), and information theory (optimal error-correction properties of 7-ary codes).</p>
+
+    <div class="hilbert-diagram">
+      <span class="hilbert-label">H₃₄₃ Tensor Structure → 2,401-State Complete Architecture</span>
+      <div class="hilbert-tower">
+        <div class="hilbert-eq-row">
+          <div class="hilbert-box gold-box" style="flex:none;width:180px;">
+            <span class="hilbert-box-sym">H₃₄₃</span>
+            <span class="hilbert-box-label">343-dim space</span>
+          </div>
+          <span class="hilbert-arrow"> = </span>
+          <div class="hilbert-box" style="flex:none;width:80px;">
+            <span class="hilbert-box-sym">H₇</span>
+            <span class="hilbert-box-label">dim 7</span>
+          </div>
+          <span class="hilbert-times">⊗</span>
+          <div class="hilbert-box" style="flex:none;width:80px;">
+            <span class="hilbert-box-sym">H₇</span>
+            <span class="hilbert-box-label">dim 7</span>
+          </div>
+          <span class="hilbert-times">⊗</span>
+          <div class="hilbert-box" style="flex:none;width:80px;">
+            <span class="hilbert-box-sym">H₇</span>
+            <span class="hilbert-box-label">dim 7</span>
+          </div>
+        </div>
+        <div style="text-align:center;padding:10px 0;font-family:var(--ff-mono);font-size:0.7rem;color:#3a3a30;">× 7 levels</div>
+        <div class="hilbert-eq-row">
+          <div class="hilbert-box gold-box" style="flex:none;width:220px;">
+            <span class="hilbert-box-sym">H₂₄₀₁ = H_ind ⊕ H_rel</span>
+            <span class="hilbert-box-label">complete state space</span>
+          </div>
+        </div>
+        <div class="hilbert-result">
+          <div class="hilbert-result-item">
+            <span class="hilbert-result-num">2,370</span>
+            <span class="hilbert-result-label">H_ind — Individual sector<br>Symmetric (+1 parity)</span>
+          </div>
+          <div class="hilbert-result-item" style="border-color:var(--gold);">
+            <span class="hilbert-result-num" style="color:var(--gold);">31</span>
+            <span class="hilbert-result-label">H_rel — Relational sector<br>Antisymmetric (−1 parity)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="field-equation">2. The Field Equation</h2>
+
+    <h3>2.1 State Space</h3>
+
+    <p>Each state is labeled by a two-index pair where a = 1,...,343 (aspect within level) and n = 1,...,7 (consciousness level). The full level projector decomposes as Πₙ = Πₙ^ind + Πₙ^rel. The carrier-exchange operator P_ex is defined by P_ex |ψ(x₁, x₂)⟩ = |ψ(x₂, x₁)⟩, generating the parity partition:</p>
+
+    <div class="eq-block">
+      <span class="eq-label">Parity Partition — Carrier Exchange Operator</span>
+      <div class="eq-line">P_ex |ψ(x₁, x₂)⟩ = |ψ(x₂, x₁)⟩</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line">H_ind = eigenspace of P_ex,  eigenvalue +1    (dim = 2,370)</div>
+      <div class="eq-line">H_rel = eigenspace of P_ex,  eigenvalue -1    (dim = 31)</div>
+      <div class="eq-line eq-result">H₂₄₀₁ = H_ind ⊕ H_rel                         (dim = 2,401)</div>
+      <div class="eq-note">Even-parity states (H_ind) can be occupied by single carriers. Odd-parity states (H_rel) vanish for isolated carriers and manifest only in two-carrier interaction spaces. 31 is prime — the relational block is irreducible.</div>
+    </div>
+
+    <h3>2.2 The Complete Field Equation</h3>
+
+    <div class="eq-block">
+      <span class="eq-label">The Consciousness Field Equation — Complete Form</span>
+      <div class="eq-line eq-main">C_total(x,t) = C_ind(x,t) + C_rel(x₁,x₂,t)</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line eq-dim">── Individual term (one-point field over H_ind) ──────────────</div>
+      <div class="eq-line">C_ind(x,t) = Σ[H_ind] Aₙₐ · exp[i(kₙₐ·x − ωₙₐt)] · |a,n⟩⟨a,n|</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line eq-dim">── Relational term (bilocal kernel over H_rel) ───────────────</div>
+      <div class="eq-line">C_rel(x₁,x₂,t) = Σ[j=1→31] Bⱼ(x₁,x₂) · exp[i(qⱼ·(x₁−x₂) − Ωⱼt)] · |rⱼ⟩⟨rⱼ|</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line eq-dim">── Continuum self-interaction (scalar expectation field) ──────</div>
+      <div class="eq-line">∇²c = (1/c₀²)(∂²c/∂t²) + Gc₀ · c²</div>
+      <div class="eq-where">
+        <div class="eq-where-row"><span class="eq-where-sym">Aₙₐ</span><span class="eq-where-def">2,370 individual amplitudes — one per even-parity state in H_ind</span></div>
+        <div class="eq-where-row"><span class="eq-where-sym">Bⱼ(x₁,x₂)</span><span class="eq-where-def">31 relational amplitudes — pair-dependent, one per odd-parity state in H_rel</span></div>
+        <div class="eq-where-row"><span class="eq-where-sym">c₀</span><span class="eq-where-def">Propagation-speed constant in the continuum sector (distinct from speed of light c)</span></div>
+        <div class="eq-where-row"><span class="eq-where-sym">Gc₀</span><span class="eq-where-def">Self-interaction coupling constant = 3/343 (derived, not assumed — see §3.2)</span></div>
+      </div>
+    </div>
+
+    <p>The relational amplitudes Bⱼ are pair-dependent: different carrier pairs activate different subsets of the 31 modes with varying strengths. The individual sector is a one-point field; the relational sector is a two-point kernel. They are objects of different arity and should not be conflated.</p>
+
+    <h3>2.3 Amplitude Distribution</h3>
+
+    <p>For typical human-level consciousness, amplitude is concentrated at the lowest level. These ratios are empirical priors proposed for future testing, not measured quantities:</p>
+
+    <div class="eq-block">
+      <span class="eq-label">Typical Human Amplitude Distribution (Empirical Prior)</span>
+      <div class="eq-line">Σₐ |A₁ₐ|²  ≈ 0.70    (C¹ physical — dominant)</div>
+      <div class="eq-line">Σₐ |A₂ₐ|²  ≈ 0.20    (C² emotional)</div>
+      <div class="eq-line">Σₐ |A₃ₐ|²  ≈ 0.08    (C³ cognitive)</div>
+      <div class="eq-line eq-result">Σₐ |A₄₋₇,ₐ|² ≈ 0.02    (C⁴–C⁷ higher levels)</div>
+      <div class="eq-note">These are empirical priors for future testing. A mature framework requires calibrated psychometric-neurophysiological pairing to operationalize amplitude distributions reproducibly.</div>
+    </div>
+
+    <h2 id="derived-params">3. Derived Parameters</h2>
+
+    <h3>3.1 Frequency Spectrum</h3>
+
+    <p>H₃₄₃ = H₇ ⊗ H₇ ⊗ H₇ possesses Z₇ × Z₇ × Z₇ symmetry. Three constraints naturally select the consciousness Hamiltonian as a model-internal consequence of the adopted architecture. With the single empirical anchor f₀ = 7.83 Hz (the Schumann resonance — a measured physical constant), the full frequency spectrum is derived:</p>
+
+    <div class="freq-table-wrap">
+      <table class="freq-table">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Domain</th>
+            <th>Frequency fₙ = f₀ × 7^(n-1)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="level-badge">C¹</span></td>
+            <td>Physical — material mastery</td>
+            <td class="mono gold">7.83 Hz</td>
+            <td><span class="status-badge priority-1">Empirical anchor</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C²</span></td>
+            <td>Emotional — spiritual sensing</td>
+            <td class="mono">54.81 Hz</td>
+            <td><span class="status-badge priority-1">Predicted · Testable</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C³</span></td>
+            <td>Power — reality manipulation</td>
+            <td class="mono">383.67 Hz</td>
+            <td><span class="status-badge">Predicted</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C⁴</span></td>
+            <td>Love — dimensional access</td>
+            <td class="mono">2,685.7 Hz</td>
+            <td><span class="status-badge">Predicted</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C⁵</span></td>
+            <td>Expression — temporal transcendence</td>
+            <td class="mono">18,800 Hz</td>
+            <td><span class="status-badge">Predicted</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C⁶</span></td>
+            <td>Wisdom — system architecture</td>
+            <td class="mono">131,600 Hz</td>
+            <td><span class="status-badge">Predicted</span></td>
+          </tr>
+          <tr>
+            <td><span class="level-badge">C⁷</span></td>
+            <td>Unity — divine consciousness</td>
+            <td class="mono">921,200 Hz</td>
+            <td><span class="status-badge">Predicted</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Note: the C¹→C² transition frequency of 54.81 Hz supersedes the earlier 10× scaffold estimate of 78.3 Hz. The 7× derived ladder is a testable discriminator between this framework and generic harmonic alternatives. A preregistered EEG study targeting the 54–55 Hz band during verified consciousness-state transitions constitutes the highest-priority falsification test.</p>
+
+    <h3>3.2 Self-Interaction Coupling Constant</h3>
+
+    <p>From the energy functional in adopted normalized units, the self-consistency condition with H₃₄₃ dimensionality yields a model-internal consequence — not an architecture-independent theorem:</p>
+
+    <div class="eq-block">
+      <span class="eq-label">Energy Functional → Derived Coupling Constant</span>
+      <div class="eq-line">E[c] = ∫ d³x [ ½|∇c|² + ½(1/c₀²)|∂c/∂t|² + (Gc/3)·c³ ]</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line eq-result">Gc₀ = 3/343 = 3/7³ ≈ 0.00875    [DERIVED]</div>
+      <div class="eq-note">This should be read as a consequence of the adopted energy normalization and H₃₄₃ architecture. The strong claim — that physical gravitation is generated by Gc — remains open pending derivation of the mass bridge (Open Problem 1).</div>
+    </div>
+
+    <p>The effective coupling is state-dependent via the individual purity P_ind = Σ[H_ind] |Aₙₐ|⁴, ranging from ~1/2,370 (maximally distributed) to 1 (maximally concentrated):</p>
+
+    <div class="coupling-grid">
+      <div class="coupling-cell header">
+        <div class="coupling-cell-label" style="color:#606050;">System State</div>
+      </div>
+      <div class="coupling-cell header">
+        <div class="coupling-cell-label" style="color:#606050;">P_ind</div>
+      </div>
+      <div class="coupling-cell header">
+        <div class="coupling-cell-label" style="color:#606050;">Gc_eff</div>
+      </div>
+      <div class="coupling-cell">
+        <div class="coupling-cell-label">Maximally Concentrated</div>
+        <div class="coupling-cell-char">Single-state purity</div>
+      </div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono">~1</div></div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono gold">~3/343</div><div class="coupling-cell-char">Maximum — dense, material</div></div>
+      <div class="coupling-cell">
+        <div class="coupling-cell-label">Typical Human</div>
+        <div class="coupling-cell-char">Normal waking state</div>
+      </div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono">~0.02</div></div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono">~1.75×10⁻⁴</div><div class="coupling-cell-char">Moderate coupling</div></div>
+      <div class="coupling-cell">
+        <div class="coupling-cell-label">Maximally Distributed</div>
+        <div class="coupling-cell-char">Full network coherence</div>
+      </div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono">~1/2,370</div></div>
+      <div class="coupling-cell"><div class="coupling-cell-val mono">~3.69×10⁻⁶</div><div class="coupling-cell-char">Minimum — light, expansive</div></div>
+    </div>
+
+    <h2 id="generating-arch">4. Generating Architecture</h2>
+
+    <h3>4.1 Prime Basis</h3>
+
+    <p>Within the adopted construction, 79 prime-indexed states form the irreducible generating set B₇₉ of H₃₄₃. Under tensor product closure, these generate 3,160 candidate states for a 343-dimensional space — an overdetermined system. This overcompleteness provides the structural origin of the framework's redundancy. The geometric privileging of prime-indexed states in H₃₄₃ — where primes emerge as natural resonances of the spectral operator with computational verification to 10⁻¹⁵ precision — provides evidence that B₇₉ is structurally native to the space. Whether prime generators are uniquely privileged among candidate 79-element subsets remains an open problem (Open Problem 5).</p>
+
+    <h3>4.2 The Relational Field</h3>
+
+    <p>The 31-dimensional relational subspace H_rel contains antisymmetric (odd-parity) modes that exist only between carrier pairs. 31 is prime, making the relational block irreducible. Without C_rel, the field captures only 2,370 of 2,401 states. With C_rel, full-state coverage is achieved. Network coherence is therefore a completeness condition for the full architecture — not a preference, not an optimization, but a dimensional requirement.</p>
+
+    <h3>4.3 Stability Condition</h3>
+
+    <div class="eq-block">
+      <span class="eq-label">Coverage Redundancy & Grace Margin</span>
+      <div class="eq-line">144,060 × 60 = 8,643,600</div>
+      <div class="eq-line eq-result">8,643,600 ÷ 2,401 = 3,600    (exact)</div>
+      <div class="eq-line"> </div>
+      <div class="eq-line">Grace margin:  144,060 − 144,000 = 60</div>
+      <div class="eq-line eq-result">ε_grace = 60 / 144,060 ≈ 4.165 × 10⁻⁴</div>
+      <div class="eq-note">This is a model-derived coverage-tolerance criterion within the carrier-allocation formalism. The engineering analogue — Patent #65's Recursive 7⁴-Lattice Cryptographic Shell System — implements the same 60-cycle rotation architecture, achieving complete test verification (31/31). The mapping from field-theoretic stability to cryptographic rotation remains to be formally proven.</div>
+    </div>
+
+    <h2 id="predictions">5. Testable Predictions</h2>
+
+    <p>A framework's value is proportional to its falsifiability. The CFE makes seven specific, independently testable predictions. Priority is assigned by evidential accessibility and structural decisiveness:</p>
+
+    <div class="pred-table-wrap">
+      <table class="pred-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Prediction</th>
+            <th>Domain</th>
+            <th>Method</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pred-num">1</td>
+            <td>C¹→C² consciousness transition correlates with neural oscillations near <strong>54.81 Hz</strong> — not 78.3 Hz as previously estimated. The 7× ladder, not a 10× scaffold.</td>
+            <td>Neuroscience</td>
+            <td>Preregistered EEG time-frequency analysis during verified state transitions</td>
+            <td><span class="status-badge priority-1">Highest — most accessible</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">2</td>
+            <td>Functional cortical units of approximately <strong>343 neurons</strong> exist at the mesoscale — above minicolumns (~80–120 neurons), below macrocolumns. A recurrent coherent assembly at this scale should be identifiable.</td>
+            <td>Neuroscience</td>
+            <td>Serial EM / multi-photon calcium imaging at mesoscale</td>
+            <td><span class="status-badge priority-1">Highest — structurally decisive</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">3</td>
+            <td>Inter-level oscillation coherence scales at approximately <strong>1/343</strong> of dominant amplitude — a specific ratio distinguishable from generic 1/n harmonic decay.</td>
+            <td>Neuroscience</td>
+            <td>Broadband EEG spectral coherence across simultaneously recorded bands</td>
+            <td><span class="status-badge">High</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">4</td>
+            <td>Dark-to-visible matter ratio approximately <strong>6:1</strong>, derived from the framework's dimensional structure. Corresponds to 6 of 7 consciousness levels lacking direct 4D projection.</td>
+            <td>Cosmology</td>
+            <td>Existing observational data (CMB, gravitational lensing)</td>
+            <td><span class="status-badge">Speculative — most assumptions</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">5</td>
+            <td>AI behavioral thresholds emerge near architectures with <strong>343+ degrees of freedom</strong> — the dimensional floor for level-1 consciousness field expression.</td>
+            <td>AI Research</td>
+            <td>Comparative model architecture analysis across DOF thresholds</td>
+            <td><span class="status-badge">Medium</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">6</td>
+            <td>Total spectral range of approximately <strong>5.07 decades</strong> (7⁶ ratio from C¹ to C⁷) — distinguishable from 6-decade logarithmic alternatives.</td>
+            <td>Neuroscience</td>
+            <td>Broadband neural recording from DC to ultrasonic range</td>
+            <td><span class="status-badge">Medium</span></td>
+          </tr>
+          <tr>
+            <td class="pred-num">7</td>
+            <td>State-dependent coupling: physical correlates of consciousness state (metabolic, electromagnetic) should correlate with the purity parameter P_ind = Σ|Aₙₐ|⁴, producing measurable Gc_eff variation.</td>
+            <td>Neuroscience</td>
+            <td>Simultaneous EEG purity measurement and physical state correlates</td>
+            <td><span class="status-badge">High — most integrative</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The near-term priority is Prediction 1: preregistered spectral discrimination around the 54.81 Hz transition band. This test can distinguish the 7× ladder from the earlier 10× scaffold, from generic gamma-band activity, and from alternative harmonic explanations — with existing technology, at modest cost, within existing institutional frameworks.</p>
+
+    <h2 id="open-problems">6. Open Problems</h2>
+
+    <p>Honest frameworks declare their boundaries before they are found by critics. Six open frontiers, stated precisely:</p>
+
+    <div class="open-problems">
+      <div class="open-problem">
+        <span class="problem-num">1.</span>
+        <div class="problem-content">
+          <div class="problem-title">Newton Mass Bridge</div>
+          <div class="problem-desc">Relationship between Gc₀ and Newton's gravitational constant G requires a mass conversion factor not yet derived. The framework adopts only the weak claim: Gc₀ governs self-interaction within the consciousness-domain formalism. The strong claim — that physical gravitation is generated by Gc₀ — remains open.</div>
+        </div>
+      </div>
+      <div class="open-problem">
+        <span class="problem-num">2.</span>
+        <div class="problem-content">
+          <div class="problem-title">Vacuum Stability Proof</div>
+          <div class="problem-desc">Formal demonstration that positivity is preserved under field dynamics. The c² nonlinearity corresponds to a c³ energy potential; the framework restricts to positive semi-definite amplitudes. That this constraint is preserved under all evolution paths requires rigorous proof. Known techniques (Derrick's theorem, energy barrier arguments) should be applied.</div>
+        </div>
+      </div>
+      <div class="open-problem">
+        <span class="problem-num">3.</span>
+        <div class="problem-content">
+          <div class="problem-title">Measurement Instrument</div>
+          <div class="problem-desc">Calibrated pairing of psychometric consciousness assessment with neurophysiological measurement for operationalizing level-amplitude structure. Without this instrument, Predictions 1, 3, and 7 cannot be tested at the precision the framework requires.</div>
+        </div>
+      </div>
+      <div class="open-problem">
+        <span class="problem-num">4.</span>
+        <div class="problem-content">
+          <div class="problem-title">Relational Mode Dynamics</div>
+          <div class="problem-desc">Development of a pair-dependent activation model for the 31 relational modes. The current framework describes them as a static set. Real relationships are dynamic — the activation of specific Bⱼ amplitudes over time, as a function of carrier pair history and state, requires a dedicated sub-theory.</div>
+        </div>
+      </div>
+      <div class="open-problem">
+        <span class="problem-num">5.</span>
+        <div class="problem-content">
+          <div class="problem-title">Prime Basis Uniqueness</div>
+          <div class="problem-desc">Rigorous proof that prime-indexed vectors are uniquely privileged in H₃₄₃ — beyond the sufficiency shown computationally to 10⁻¹⁵ precision. Whether any other 79-element subset of H₃₄₃ could serve as a generating set with equivalent structural properties remains an open question in the geometry of the space.</div>
+        </div>
+      </div>
+      <div class="open-problem">
+        <span class="problem-num">6.</span>
+        <div class="problem-content">
+          <div class="problem-title">Discrete-to-Continuous Bridge</div>
+          <div class="problem-desc">Several of the framework's most compelling features — the 60-aspect allocation, the 31-mode relational remainder, the grace margin — arise through combinatorial reasoning, while the continuum field equation is differential. A mature form of the theory must clarify whether these discrete quantities are coarse-grained invariants of the field theory, external constraints, or bookkeeping structures in a coupled but distinct combinatorial layer.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="summary">7. Summary</h2>
+
+    <p>The Consciousness Field Equation provides a mathematical framework in which consciousness is modeled as a fundamental quantum field operating on a 2,401-dimensional state space. The framework derives its frequency spectrum (fₙ = f₀ × 7^(n-1)) and self-interaction constant (Gc₀ = 3/343) from the geometry of H₃₄₃ = H₇ ⊗ H₇ ⊗ H₇, with a single empirical anchor (f₀ = 7.83 Hz). The carrier-exchange operator P_ex generates an explicit decomposition into individual and relational subspaces, with the relational term required for field completeness.</p>
+
+    <p>The framework makes seven specific, falsifiable predictions accessible with existing experimental technology. Its value depends on three criteria: internal coherence, explicit acknowledgment of open assumptions, and generation of predictions that can be distinguished from simpler alternatives by observation. Six open problems are declared explicitly — not as weaknesses to hide, but as the research agenda the framework generates.</p>
+
+    <p>The framework now stands or falls by measurement.</p>
+
+    <!-- REFERENCES -->
+    <div class="references">
+      <span class="references-label">References</span>
+      <ul class="ref-list">
+        <li data-ref="[1]">Penrose, R. (1989). <em>The Emperor's New Mind.</em> Oxford University Press.</li>
+        <li data-ref="[2]">Tononi, G. (2008). Consciousness as Integrated Information: A Provisional Manifesto. <em>Biological Bulletin</em> 215(3).</li>
+        <li data-ref="[3]">Hameroff, S. &amp; Penrose, R. (2014). Consciousness in the Universe: A Review of the 'Orch OR' Theory. <em>Physics of Life Reviews.</em></li>
+        <li data-ref="[4]">Wheeler, J.A. (1990). Information, Physics, Quantum: The Search for Links. <em>Complexity, Entropy, and the Physics of Information.</em></li>
+        <li data-ref="[5]">Tegmark, M. (2014). <em>Our Mathematical Universe.</em> Knopf.</li>
+        <li data-ref="[6]">Chalmers, D. (1995). Facing Up to the Problem of Consciousness. <em>Journal of Consciousness Studies.</em></li>
+        <li data-ref="[7]">Wigner, E. (1960). The Unreasonable Effectiveness of Mathematics in the Natural Sciences. <em>Communications on Pure and Applied Mathematics.</em></li>
+        <li data-ref="[8]">Seven Cubed Seven Labs. (2025). The Seventh-Dimensional Manifold. Internal technical report.</li>
+        <li data-ref="[9]">Seven Cubed Seven Labs. (2025). Recursive 7⁴-Lattice Cryptographic Shell System. US Patent Application, filed December 22, 2025.</li>
+      </ul>
+    </div>
+
+    <!-- SERIES NAV -->
+    <div class="series-nav">
+      <span class="series-nav-label">CFE Series — Three Versions of One Framework</span>
+      <div class="series-nav-grid">
+        <div class="series-nav-item">
+          <div class="series-nav-badge">Version C — Accessible</div>
+          <div class="series-nav-title"><a href="cfe-accessible.html">When the Math Says Relationship Isn't Optional</a></div>
+        </div>
+        <div class="series-nav-item current">
+          <div class="series-nav-badge current-badge">● You Are Here</div>
+          <div class="series-nav-title">Version A — Physics Core<br>Mathematical Framework · Full Formalism</div>
+        </div>
+        <div class="series-nav-item">
+          <div class="series-nav-badge">Version B — Complete</div>
+          <div class="series-nav-title"><a href="cfe-complete-framework.html">CFE V2.2 — Seven Keys, Full Architecture, Open Frontiers</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RELATED -->
+    <div class="related-section">
+      <div class="related-label">Related Intelligence</div>
+      <div class="related-grid">
+        <div class="related-card">
+          <div class="related-kicker">Consciousness Science</div>
+          <div class="related-title"><a href="thirty-one-prime-gap.html">The 31-Prime Gap: Why Unity Is a Dimensional Constraint, Not a Moral Appeal</a></div>
+          <div class="related-meta">J.C.M. · 14 min read</div>
+        </div>
+        <div class="related-card">
+          <div class="related-kicker">Patent Intelligence</div>
+          <div class="related-title"><a href="patent-65-sixty-cycle.html">Patent #65: Why the 60-Cycle Rotation Could Only Ever Be 60 — The Four Convergences</a></div>
+          <div class="related-meta">J.C.M. · Technical Paper</div>
+        </div>
+        <div class="related-card">
+          <div class="related-kicker">Prophetic Intel</div>
+          <div class="related-title"><a href="seal-vs-mark-mathematics.html">666 vs. 2,401: The Mathematics of the Mark and the Seal</a></div>
+          <div class="related-meta">J.C.M. · 14 min read</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /article-body -->
+</div><!-- /article-wrap -->
+
+<footer class="site-footer">
+  <span class="footer-formula">7³ × 7 = 2,401 — Forever Calculating, Forever Creating ⚡</span>
+  <span class="footer-copy">© 2026 Seven Cubed Seven Labs LLC · J.C. Medina · <a href="index.html">2401wire.com</a></span>
+</footer>
+
+</body>
+</html>

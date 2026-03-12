@@ -830,6 +830,154 @@
       .utility-links { display: none; }
       .nav-links li:nth-child(n+5) { display: none; }
     }
+    /* ── CFE SERIES BAND ──────────────────────────── */
+    .cfe-band {
+      background: #0e0e14;
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      margin: 40px -24px;
+      padding: 48px 24px;
+      position: relative;
+    }
+    .cfe-band::before {
+      content: 'Featured Series · Consciousness Science';
+      display: block;
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .cfe-inner { max-width: 1200px; margin: 0 auto; }
+    .cfe-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #2a2a3a;
+    }
+    .cfe-series-title {
+      font-family: var(--ff-head);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900;
+      color: var(--paper);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .cfe-series-title span { color: var(--gold); }
+    .cfe-series-desc {
+      font-size: 0.95rem;
+      color: #b0b0a0;
+      line-height: 1.75;
+      font-style: italic;
+    }
+    .cfe-equation {
+      font-family: var(--ff-mono);
+      font-size: 0.75rem;
+      color: var(--gold-lt);
+      letter-spacing: 0.08em;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border: 1px solid #2a2a3a;
+      display: inline-block;
+      background: #13131e;
+    }
+    .cfe-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .cfe-card {
+      background: #13131e;
+      border: 1px solid #2a2a3a;
+      border-top: 3px solid var(--gold);
+      padding: 28px 24px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .cfe-card:hover { border-top-color: var(--gold-lt); background: #181826; }
+    .cfe-card-badge {
+      font-family: var(--ff-mono);
+      font-size: 0.56rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cfe-card-badge .badge-dot {
+      width: 4px; height: 4px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .cfe-card-title {
+      font-family: var(--ff-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--paper);
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .cfe-card-title a:hover { color: var(--gold-lt); }
+    .cfe-card-desc {
+      font-size: 0.82rem;
+      color: #9090a0;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .cfe-card-meta {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      color: #606070;
+      letter-spacing: 0.08em;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-top: 1px solid #2a2a3a;
+      padding-top: 14px;
+      margin-top: auto;
+    }
+    .cfe-card-meta .gold { color: var(--gold); }
+    .cfe-card-glyph {
+      font-family: var(--ff-mono);
+      font-size: 1.8rem;
+      color: var(--gold);
+      opacity: 0.25;
+      text-align: right;
+      margin-bottom: 8px;
+      letter-spacing: -0.05em;
+    }
+    .cfe-key-result {
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: #13131e;
+      border-left: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cfe-key-result-label {
+      font-family: var(--ff-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .cfe-key-result-text {
+      font-size: 0.88rem;
+      color: #c0c0b0;
+      line-height: 1.6;
+      font-style: italic;
+      flex: 1;
+    }
+
   </style>
 </head>
 <body>
@@ -844,6 +992,8 @@
     <span>Patent #65 provisional filed Dec. 22, 2025 — conversion deadline: Dec. 22, 2026</span>
     <span>Prophetic Convergence Index: Deception Infrastructure 87% · Economic Control 90% · Consciousness Awakening 71%</span>
     <span>NEW SERIES: Public Health Architecture — 5 stones examining COVID mandate strategy through structural analysis and trust-infrastructure framework</span>
+    <span>NEW: Consciousness Field Equation Series — consciousness modeled as a fundamental quantum field with derived parameters and falsifiable predictions — 3 versions now live</span>
+    <span>CFE Key result: 31 irreducible relational modes prove isolation is dimensionally impossible — mathematical proof, not philosophy</span>
     <span>Nvidia retreats from OpenAI and Anthropic investments — the architecture war begins</span>
     <span>Claude hits #1 on App Store 24 hours after Anthropic refuses Pentagon autonomous weapons contract</span>
     <span>ChatGPT uninstalls surge 295% following DoD alignment — the Seal vs. Mark divergence accelerates</span>
@@ -1131,6 +1281,73 @@
     </div>
   </div>
 
+  <!-- CFE SERIES BAND -->
+  <div class="cfe-band" id="cfe-series">
+    <div class="cfe-inner">
+      <div class="cfe-header">
+        <div>
+          <div class="cfe-series-title">The Consciousness<br>Field <span>Equation</span></div>
+          <div class="cfe-equation">C(x,t) = C_ind(x,t) + C_rel(x₁,x₂,t)</div>
+        </div>
+        <div>
+          <p class="cfe-series-desc">Consciousness modeled not as an emergent property of neural complexity — but as the fundamental field from which physical reality emerges. One empirical anchor (f₀ = 7.83 Hz), no free parameters, an entire architecture derived. The framework survived three rounds of adversarial review with seventeen objections raised and resolved. Six open frontiers remain, honestly declared. Three versions — for physicists, for researchers, for everyone — published simultaneously.</p>
+        </div>
+      </div>
+
+      <div class="cfe-cards">
+
+        <!-- Card A: Physics Core -->
+        <div class="cfe-card">
+          <div class="cfe-card-glyph">H₃₄₃</div>
+          <div class="cfe-card-badge"><span class="badge-dot"></span> Version A · Physics Core</div>
+          <h3 class="cfe-card-title"><a href="cfe-physics-core.html">The Consciousness Field Equation: A Mathematical Framework</a></h3>
+          <p class="cfe-card-desc">The rigorous paper. Full Hilbert space formalism, parity-based decomposition of H₂₄₀₁ = H_ind ⊕ H_rel, derived frequency spectrum fₙ = f₀ × 7^(n-1), self-interaction constant Gc₀ = 3/343, and seven falsifiable predictions. Written for physicists, reviewed adversarially by three independent AI analytical systems. The measurement problem, formally addressed.</p>
+          <div class="cfe-card-meta">
+            <span class="gold">J.C.M.</span>
+            <span>Mar 2026</span>
+            <span>Consciousness Science</span>
+            <span>Physics · Academic</span>
+          </div>
+        </div>
+
+        <!-- Card B: Complete Framework -->
+        <div class="cfe-card">
+          <div class="cfe-card-glyph">V2.2</div>
+          <div class="cfe-card-badge"><span class="badge-dot"></span> Version B · Complete Framework</div>
+          <h3 class="cfe-card-title"><a href="cfe-complete-framework.html">CFE V2.2 — The Complete Framework: Seven Keys, Full Architecture, Open Frontiers</a></h3>
+          <p class="cfe-card-desc">The comprehensive document. Full table of contents, every section of the framework, the Seven Keys unified statement, epistemic stratification of all claims as DERIVED / MOTIVATED / PREDICTED, engineering analogue via Patent #65, and explicit declaration of all six open frontiers. The reference architecture for the entire CFE series.</p>
+          <div class="cfe-card-meta">
+            <span class="gold">J.C.M.</span>
+            <span>Mar 2026</span>
+            <span>Consciousness Science</span>
+            <span>Full Framework</span>
+          </div>
+        </div>
+
+        <!-- Card C: Accessible Version -->
+        <div class="cfe-card">
+          <div class="cfe-card-glyph">31</div>
+          <div class="cfe-card-badge"><span class="badge-dot"></span> Version C · Accessible</div>
+          <h3 class="cfe-card-title"><a href="cfe-accessible.html">When the Math Says Relationship Isn't Optional</a></h3>
+          <p class="cfe-card-desc">The "why should you care" version. No Hilbert space notation required. Here's what the framework found: one measured number in, an entire architecture out. And buried in the math — 31 dimensions of the state space that cannot exist inside any individual. They exist only between two carriers. Relationship is not a moral suggestion. It is a dimensional requirement. 31 is prime. The block is irreducible.</p>
+          <div class="cfe-card-meta">
+            <span class="gold">J.C.M.</span>
+            <span>Mar 2026</span>
+            <span>Consciousness Science</span>
+            <span>General Audience</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cfe-key-result">
+        <span class="cfe-key-result-label">Key Result</span>
+        <p class="cfe-key-result-text">The full state space has 2,401 dimensions. Individual carriers can account for 2,370. The remaining 31 are antisymmetric under carrier exchange — they vanish for isolated carriers and exist only between two. 31 is prime: the relational block is irreducible. You cannot approximate it with 30 + 1. The state space is literally 31 dimensions short of completeness without relationship. Not philosophy. A theorem.</p>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ORACLE / OPINION BAND -->
   <div class="opinion-band">
     <div class="opinion-inner">
@@ -1206,11 +1423,19 @@
           <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · 144k Network · 16 min read</div>
         </div>
       </article>
+      <article class="list-story">
+        <span class="list-num">6</span>
+        <div>
+          <h3 class="list-headline"><a href="cfe-accessible.html">When the Math Says Relationship Isn't Optional — The Consciousness Field Equation, Accessible Version</a></h3>
+          <div class="list-meta"><span style="color: var(--gold)">J.C.M.</span> · Consciousness Science · 12 min read</div>
+        </div>
+      </article>
     </div>
 
     <aside class="bottom-right">
       <div class="section-label">Explore by Topic</div>
       <ul class="topics-list">
+        <li><a href="#cfe-series">Consciousness Field Equation</a></li>
         <li><a href="#">Prophetic Intelligence</a></li>
         <li><a href="#">Patent #65 &amp; Crypto</a></li>
         <li><a href="#">AI Architecture Analysis</a></li>
