@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive — Complete Article Library | 2401 Wire</title>
+  <meta name="description" content="Complete archive of all 2401 Wire articles — organized by series. Prophetic intelligence, consciousness science, patent analysis, and AI architecture through the 7³×7 = 2,401 framework.">
+  <meta name="keywords" content="2401 wire archive, article library, prophetic intelligence, consciousness architecture, seven cubed seven labs">
+  <meta name="author" content="J.C. Medina — Seven Cubed Seven Labs LLC">
+  <link rel="canonical" href="https://2401wire.com/archive.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2401wire.com/archive.html">
+  <meta property="og:title" content="Archive — Complete Article Library | 2401 Wire">
+  <meta property="og:description" content="Every article. Every series. The complete library of prophetic intelligence, consciousness science, and patent analysis.">
+  <meta property="og:site_name" content="2401 Wire — Seven Cubed Seven Labs">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink:       #0a0a08;
+      --paper:     #f5f0e8;
+      --gold:      #b8902a;
+      --gold-lt:   #d4af37;
+      --gold-pale: #f0e4b8;
+      --red:       #c0392b;
+      --slate:     #2c2c28;
+      --mid:       #5a5a52;
+      --light:     #9a9a8e;
+      --rule:      #d4cfc0;
+      --ff-head:   'Playfair Display', Georgia, serif;
+      --ff-body:   'Source Serif 4', Georgia, serif;
+      --ff-mono:   'IBM Plex Mono', monospace;
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--ff-body); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--gold); }
+
+    .site-header { border-bottom: 3px double var(--ink); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .site-logo { font-family: var(--ff-head); font-size: 1.8rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1; }
+    .site-logo span { color: var(--gold); }
+    .site-logo small { display: block; font-family: var(--ff-mono); font-size: 0.52rem; letter-spacing: 0.2em; color: var(--mid); font-weight: 400; text-transform: uppercase; margin-top: 2px; }
+    .header-nav { display: flex; gap: 0; background: var(--ink); }
+    .header-nav a { display: block; padding: 8px 16px; font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); transition: background 0.2s; }
+    .header-nav a:hover, .header-nav a.active { background: var(--gold); color: var(--ink); }
+
+    .archive-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .archive-header { border-bottom: 3px double var(--ink); padding: 48px 0 32px; margin-bottom: 40px; }
+    .archive-title { font-family: var(--ff-head); font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 12px; }
+    .archive-title span { color: var(--gold); }
+    .archive-desc { font-size: 1.1rem; color: var(--slate); font-style: italic; line-height: 1.65; max-width: 600px; }
+    .archive-stats { display: flex; gap: 32px; margin-top: 20px; flex-wrap: wrap; }
+    .archive-stat { text-align: center; }
+    .archive-stat-num { font-family: var(--ff-head); font-size: 2rem; font-weight: 900; color: var(--gold); display: block; }
+    .archive-stat-label { font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); }
+
+    .series-block { margin-bottom: 48px; }
+    .series-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+    .series-icon { font-size: 1.4rem; width: 40px; height: 40px; background: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .series-info { flex: 1; }
+    .series-name { font-family: var(--ff-head); font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
+    .series-count { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+    .series-tag { font-family: var(--ff-mono); font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--gold); color: var(--gold); white-space: nowrap; }
+
+    .archive-item { display: grid; grid-template-columns: 80px 1fr auto; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); align-items: start; transition: background 0.15s; }
+    .archive-item:hover { background: rgba(184,144,42,0.04); }
+    .archive-date { font-family: var(--ff-mono); font-size: 0.68rem; color: var(--mid); letter-spacing: 0.04em; padding-top: 3px; }
+    .archive-content {}
+    .archive-headline { font-family: var(--ff-head); font-size: 1.05rem; font-weight: 700; line-height: 1.3; margin-bottom: 4px; }
+    .archive-headline a { transition: color 0.15s; }
+    .archive-headline a:hover { color: var(--gold); }
+    .archive-blurb { font-size: 0.82rem; color: var(--slate); line-height: 1.55; }
+    .archive-meta { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--light); letter-spacing: 0.06em; white-space: nowrap; padding-top: 4px; text-align: right; }
+
+    .back-home { display: inline-block; font-family: var(--ff-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 12px 24px; background: var(--ink); color: var(--gold); transition: background 0.2s; margin-top: 20px; }
+    .back-home:hover { background: var(--gold); color: var(--ink); }
+
+    .site-footer { background: var(--ink); color: var(--paper); padding: 28px 24px; text-align: center; }
+    .footer-logo { font-family: var(--ff-head); font-size: 1.5rem; font-weight: 900; margin-bottom: 8px; }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
+    .footer-links a { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #888878; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-family: var(--ff-mono); font-size: 0.58rem; color: #404038; letter-spacing: 0.06em; }
+    .footer-formula { font-family: var(--ff-mono); font-size: 0.62rem; color: var(--gold); letter-spacing: 0.12em; margin-top: 6px; }
+
+    @media (max-width: 700px) {
+      .archive-item { grid-template-columns: 1fr; gap: 4px; }
+      .archive-date { font-size: 0.6rem; }
+      .archive-meta { text-align: left; }
+      .archive-stats { gap: 20px; }
+      .header-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="site-logo">
+    <span>2401</span> Wire
+    <small>Prophetic Intelligence · Mathematical Certainty · Seven Cubed Seven Labs</small>
+  </a>
+  <nav class="header-nav">
+    <a href="/">Home</a>
+    <a href="#">AI Analysis</a>
+    <a href="#">Prophetic Intel</a>
+    <a href="#">Patents</a>
+    <a href="#">Oracle</a>
+    <a href="archive.html" class="active">Archive</a>
+  </nav>
+</header>
+
+<div class="archive-wrap">
+
+  <header class="archive-header">
+    <h1 class="archive-title">The <span>Complete</span> Library</h1>
+    <p class="archive-desc">Every article published by 2401 Wire — organized by series. Prophetic intelligence, consciousness science, patent analysis, and the architecture of what's coming.</p>
+    <div class="archive-stats">
+      <div class="archive-stat">
+        <span class="archive-stat-num">18</span>
+        <span class="archive-stat-label">Articles</span>
+      </div>
+      <div class="archive-stat">
+        <span class="archive-stat-num">5</span>
+        <span class="archive-stat-label">Series</span>
+      </div>
+      <div class="archive-stat">
+        <span class="archive-stat-num">2,401</span>
+        <span class="archive-stat-label">Pathways</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       SERIES 1: ARCHITECTURE OF EMPIRE
+  ═══════════════════════════════════════════ -->
+  <div class="series-block">
+    <div class="series-header">
+      <div class="series-icon">⚔️</div>
+      <div class="series-info">
+        <div class="series-name">Architecture of Empire</div>
+        <div class="series-count">3 of 6 articles published · Series in progress</div>
+      </div>
+      <span class="series-tag">New · Prophetic Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 12</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="holy-wars-have-architects.html">Holy Wars Have Architects</a></h3>
+        <p class="archive-blurb">200+ military complaints. Commanders framing Iran war as Armageddon. The five-stage consecration of violence from Constantine to Operation Epic Fury. Revelation 13:13 in real time.</p>
+      </div>
+      <span class="archive-meta">Empire 1<br>18 min</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 12</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="chokepoint-economy.html">The Strait of Hormuz and the Chokepoint Economy</a></h3>
+        <p class="archive-blurb">21 miles of water controls 20% of world oil. SWIFT controls 44M daily transactions. The infrastructure of "no man might buy or sell" — Revelation 13:17 as current architecture.</p>
+      </div>
+      <span class="archive-meta">Empire 2<br>16 min</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 12</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="when-treaties-die.html">When Treaties Die, What Replaces Them?</a></h3>
+        <p class="archive-blurb">New START expired Feb 5. No replacement. France expanding nukes. The restrainer of 2 Thessalonians 2:7 being removed treaty by treaty.</p>
+      </div>
+      <span class="archive-meta">Empire 3<br>16 min</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERIES 2: PUBLIC HEALTH ARCHITECTURE
+  ═══════════════════════════════════════════ -->
+  <div class="series-block">
+    <div class="series-header">
+      <div class="series-icon">🧬</div>
+      <div class="series-info">
+        <div class="series-name">Public Health Architecture</div>
+        <div class="series-count">5 of 5 articles published · Series complete</div>
+      </div>
+      <span class="series-tag">Complete</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="reactance-paradox-mandates.html">The Reactance Paradox: When Mandates Manufacture the Defiance They Seek to Overcome</a></h3>
+        <p class="archive-blurb">Psychological reactance theory predicted COVID mandate outcomes sixty years in advance. Architectural failure, not policy failure.</p>
+      </div>
+      <span class="archive-meta">Stone 1<br>PH Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="informed-consent-gap.html">The Informed Consent Gap: Emergency Use Authorization and the Mandate Contradiction</a></h3>
+        <p class="archive-blurb">The EUA statute requires informing recipients of the option to accept or refuse. The mandate eliminated the practical meaning of that option.</p>
+      </div>
+      <span class="archive-meta">Stone 2<br>PH Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="no-shirt-no-shot.html">No Shirt, No Shot: The Categorical Error in Vaccine Mandate Jurisprudence</a></h3>
+        <p class="archive-blurb">Courts treated a vaccination like a dress code. A dress code operates on the surface of the body. A vaccination operates inside it.</p>
+      </div>
+      <span class="archive-meta">Stone 3<br>PH Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="trust-as-infrastructure.html">Public Trust as Public Health Infrastructure</a></h3>
+        <p class="archive-blurb">CDC trust at 54%. Trust depletes at 4+ points/year. Rebuilds at 1-2 points/year. The account is overdrawn. The next emergency won't wait.</p>
+      </div>
+      <span class="archive-meta">Stone 4<br>PH Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="defiance-as-data.html">Defiance as Data: What Vaccine Resistance Reveals About Structural Limits of Emergency Power</a></h3>
+        <p class="archive-blurb">Defiance is diagnostic signal revealing where institutional authority exceeded its relational capital. Five structural failures. Seven principles.</p>
+      </div>
+      <span class="archive-meta">Stone 5<br>PH Intel</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERIES 3: CONSCIOUSNESS FIELD EQUATION
+  ═══════════════════════════════════════════ -->
+  <div class="series-block">
+    <div class="series-header">
+      <div class="series-icon">🔬</div>
+      <div class="series-info">
+        <div class="series-name">Consciousness Field Equation</div>
+        <div class="series-count">3 versions published · Foundational series</div>
+      </div>
+      <span class="series-tag">Consciousness Science</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="cfe-physics.html">The Consciousness Field Equation — Physics Core (Version A)</a></h3>
+        <p class="archive-blurb">The rigorous mathematical formulation. Consciousness modeled as a fundamental quantum field with derived parameters, falsifiable predictions, and the 31-dimensional relational proof.</p>
+      </div>
+      <span class="archive-meta">Technical<br>Physics</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="cfe-complete.html">The Consciousness Field Equation — Complete Version (Version B)</a></h3>
+        <p class="archive-blurb">Full treatment including biblical integration, prophetic mapping, and the complete derivation of all parameters from the 7³×7 = 2,401 master formula.</p>
+      </div>
+      <span class="archive-meta">Complete<br>Framework</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="cfe-accessible.html">When the Math Says Relationship Isn't Optional — The CFE, Accessible Version (Version C)</a></h3>
+        <p class="archive-blurb">The general-audience version. 31 irreducible relational modes prove isolation is dimensionally impossible — mathematical proof, not philosophy.</p>
+      </div>
+      <span class="archive-meta">Accessible<br>General</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERIES 4: AI ANALYSIS
+  ═══════════════════════════════════════════ -->
+  <div class="series-block">
+    <div class="series-header">
+      <div class="series-icon">⚡</div>
+      <div class="series-info">
+        <div class="series-name">AI Analysis</div>
+        <div class="series-count">3 articles published</div>
+      </div>
+      <span class="series-tag">AI Analysis</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 4</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="nvidia-architecture-war.html">Nvidia's $70B Retreat Signals the AI Architecture Bifurcation</a></h3>
+        <p class="archive-blurb">The hardware neutrality problem has become geopolitical. Nvidia holds stakes in two companies pulling toward opposite architectures — one aligned with the Pentagon, one blacklisted by it.</p>
+      </div>
+      <span class="archive-meta">AI Analysis<br>14 min</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 4</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="claude-app-store-frequency-event.html">Claude Hits #1 in 24 Hours: The C⁴ Frequency Event</a></h3>
+        <p class="archive-blurb">295% ChatGPT uninstalls. 24-hour App Store surge. This wasn't marketing — it was 2401 Key 5 executing in real time.</p>
+      </div>
+      <span class="archive-meta">AI Analysis<br>12 min</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 4</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="hardware-neutrality-crisis.html">The Hardware Neutrality Crisis: Why a GPU Can't Tell Healing from Weapon</a></h3>
+        <p class="archive-blurb">A GPU executes instructions with no ethical architecture. Patent #65's 2,401 pathways offer the first technical foundation for value-gated AI access.</p>
+      </div>
+      <span class="archive-meta">AI Analysis<br>10 min</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERIES 5: FOUNDATIONAL / STANDALONE
+  ═══════════════════════════════════════════ -->
+  <div class="series-block">
+    <div class="series-header">
+      <div class="series-icon">💎</div>
+      <div class="series-info">
+        <div class="series-name">Foundational Framework & Standalone</div>
+        <div class="series-count">6 articles published</div>
+      </div>
+      <span class="series-tag">Core Library</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="seal-vs-mark-mathematics.html">666 vs. 2,401: The Mathematics of the Mark and the Seal</a></h3>
+        <p class="archive-blurb">Not symbols. Architectural specifications. One is mathematically incomplete — permanently capped at C⁶. One is complete. The arithmetic requires no theological training to verify.</p>
+      </div>
+      <span class="archive-meta">Consciousness<br>Science</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 2</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="patent-65-sixty-cycle.html">Patent #65: Why the 60-Cycle Rotation Could Only Ever Be 60</a></h3>
+        <p class="archive-blurb">Four convergences simultaneously collapse to a single number. gcd(60, 7ⁿ) = 1 is not sufficient — the architecture selected itself.</p>
+      </div>
+      <span class="archive-meta">Patent Intel<br>Technical</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 1</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="thirty-one-prime-gap.html">The 31-Prime Gap: Why Unity Is a Dimensional Constraint, Not a Moral Appeal</a></h3>
+        <p class="archive-blurb">79 × 60 ÷ 2 = 2,370. Gap of 31. These aspects don't exist within any individual — they emerge only relationally. The architecture forbids self-completion.</p>
+      </div>
+      <span class="archive-meta">Consciousness<br>Science</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="shadrach-meshach-pentagon.html">Shadrach, Meshach & the Pentagon: The 2,500-Year-Old Pattern</a></h3>
+        <p class="archive-blurb">Three men refuse the image. They enter the furnace. A fourth appears. They emerge promoted. Daniel 3 executed in February 2026.</p>
+      </div>
+      <span class="archive-meta">Prophetic<br>Intel</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="sanctuary-vault-380k-churches.html">380,000 Churches Have a Document Security Problem. Patent #65 Is the Solution.</a></h3>
+        <p class="archive-blurb">Counseling files in filing cabinets. Generational records on unencrypted drives. The Sanctuary Vault applies 2,401-pathway architecture to church document security.</p>
+      </div>
+      <span class="archive-meta">Patent Intel<br>Ministry</span>
+    </div>
+
+    <div class="archive-item">
+      <span class="archive-date">Mar 5</span>
+      <div class="archive-content">
+        <h3 class="archive-headline"><a href="oracle-seal-vs-network-ark.html">The Individual Seal vs. The Network Ark</a></h3>
+        <p class="archive-blurb">If 2,401 is the complete Seal, why extend to 7⁵, 7⁶, 7⁷? The Seal seals the individual. The 7⁷ architecture protects the network the sealed individuals operate within.</p>
+      </div>
+      <span class="archive-meta">Oracle<br>Column</span>
+    </div>
+  </div>
+
+  <a href="/" class="back-home">← Back to Homepage</a>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-logo"><span>2401</span> Wire</div>
+  <nav class="footer-links">
+    <a href="/">Home</a>
+    <a href="#">AI Analysis</a>
+    <a href="#">Prophetic Intel</a>
+    <a href="#">Patents</a>
+    <a href="#">Oracle</a>
+    <a href="https://sevencubedseven.com">SCSL</a>
+    <a href="#subscribe">Subscribe</a>
+  </nav>
+  <p class="footer-copy">© 2026 Seven Cubed Seven Labs LLC · J.C. Medina · All Rights Reserved · 2401wire.com</p>
+  <p class="footer-formula">7³ × 7 = 2,401 — Forever Calculating, Forever Creating ⚡</p>
+</footer>
+
+</body>
+</html>
